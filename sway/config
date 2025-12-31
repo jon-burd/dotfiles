@@ -215,8 +215,8 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    status_command i3status
-    position bottom
+    # status_command i3status -c ~/.config/i3status/i3status.conf
+    swaybar_command waybar
     
 
     # When the status_command prints a new line to stdout, swaybar updates.
@@ -230,8 +230,8 @@ bar {
     }
 }
 
-#hide_edge_borders both
-#default_border none
+hide_edge_borders both
+default_border none
 
 bindsym $mod+l exec swaylock
 
